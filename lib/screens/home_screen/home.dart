@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oddo_app/screens/other_pages/addtask.dart';
 import 'package:oddo_app/screens/other_pages/firstpage.dart';
 import 'package:oddo_app/screens/other_pages/secondPage.dart';
 import 'package:oddo_app/screens/other_pages/thirdpage.dart';
@@ -29,7 +30,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       floatingActionButton: FloatingActionButton.small(
         onPressed: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (ctx) => MySecondPage()));
+              .push(MaterialPageRoute(builder: (ctx) => AddTaskPage()));
         },
         backgroundColor: Colors.blue.shade200,
         child: Icon(
